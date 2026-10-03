@@ -1,0 +1,209 @@
+{
+  "smartphones": {
+    "category": "E-Waste — Mobile Devices",
+    "materials": [
+      "lithium-ion battery",
+      "gorilla glass / OLED display",
+      "aluminium chassis",
+      "copper wiring",
+      "rare-earth elements (neodymium, dysprosium)",
+      "gold, silver, palladium (PCB contacts)",
+      "plastic housing",
+      "tin solder"
+    ],
+    "components": [
+      "battery",
+      "display panel",
+      "main PCB / logic board",
+      "camera module",
+      "SIM tray",
+      "speaker & microphone",
+      "antenna",
+      "vibration motor"
+    ],
+    "reuse_potential": "high",
+    "repairability": "moderate",
+    "recovery_pathway": [
+      "Remove SIM card and memory card before handing in",
+      "Take the device to an authorised e-waste collection facility",
+      "Facility will safely extract the battery for licensed lithium recycling",
+      "PCB and display will be separated by certified recyclers for precious-metal recovery",
+      "Rare-earth magnets in speaker and motor recovered through industrial processes"
+    ],
+    "recycling_stream": "Mobile / Electronics Recycling",
+    "risk_level": "medium",
+    "safe_handling": [
+      "Do not attempt to remove or puncture the battery yourself — risk of fire or chemical burn",
+      "Do not crush, burn, or incinerate the device",
+      "If the battery is swollen or damaged, place in a fireproof container and deliver to a certified collection point immediately",
+      "Handle cracked screens carefully to avoid glass cuts",
+      "Use only authorised e-waste recycling facilities for disposal"
+    ],
+    "reasoning_basis": "Smartphones contain concentrated high-value materials (precious metals, rare earths) in a compact form factor, making per-unit recovery economically viable when processed by certified recyclers."
+  },
+
+  "laptops": {
+    "category": "E-Waste — Computing Devices",
+    "materials": [
+      "lithium-ion / lithium-polymer battery",
+      "aluminium / magnesium alloy chassis",
+      "copper heat pipes and wiring",
+      "LCD / OLED display panel",
+      "steel hinges",
+      "gold, silver, palladium (PCB connectors)",
+      "silicon (CPU, GPU, RAM dies)",
+      "ABS / polycarbonate plastic",
+      "tin-lead or lead-free solder"
+    ],
+    "components": [
+      "battery pack",
+      "display assembly",
+      "motherboard",
+      "CPU with heat sink",
+      "RAM modules",
+      "SSD / HDD storage",
+      "keyboard",
+      "trackpad",
+      "Wi-Fi card",
+      "power adapter / charging port"
+    ],
+    "reuse_potential": "high",
+    "repairability": "moderate",
+    "recovery_pathway": [
+      "Back up and securely erase personal data from storage media before recycling",
+      "Deliver the complete laptop to a certified e-waste recycler",
+      "Certified facility will safely remove the battery for lithium recycling",
+      "Motherboard, RAM, and connectors processed for precious-metal recovery",
+      "Aluminium chassis and copper heat pipes recovered through industrial metal recycling"
+    ],
+    "recycling_stream": "Computer / Electronics Recycling",
+    "risk_level": "medium",
+    "safe_handling": [
+      "Do not attempt to remove the battery yourself — fire and chemical hazard",
+      "Do not burn or incinerate any laptop components",
+      "Wipe all personal data from storage before handing the device to a recycler",
+      "Older laptops may contain mercury in display backlights — handle as hazardous and leave disassembly to professionals",
+      "Use only certified e-waste recycling facilities for disposal"
+    ],
+    "reasoning_basis": "Laptops offer high material recovery value due to large PCBs, copper heat-pipe assemblies, and aluminium chassis, but require professional handling for battery and data-bearing components."
+  },
+
+  "electrical_cables": {
+    "category": "E-Waste — Wiring & Connectors",
+    "materials": [
+      "copper conductors",
+      "aluminium conductors",
+      "PVC insulation",
+      "rubber sheathing",
+      "nylon braiding",
+      "tin-plated connectors",
+      "gold-plated connector tips (premium cables)"
+    ],
+    "components": [
+      "inner conductor (solid or stranded)",
+      "insulation layer",
+      "shielding braid or foil",
+      "outer jacket",
+      "connector / plug heads"
+    ],
+    "reuse_potential": "low",
+    "repairability": "low",
+    "recovery_pathway": [
+      "Collect and bundle cables for drop-off at a certified e-waste or scrap-metal facility",
+      "Facility will sort cables by conductor type (copper vs. aluminium)",
+      "Industrial cable-stripping machines will separate insulation from metal",
+      "Recovered copper and aluminium sent for smelting and reuse",
+      "PVC and rubber insulation handled by specialist plastic recyclers"
+    ],
+    "recycling_stream": "Cable / Electronics Recycling",
+    "risk_level": "low",
+    "safe_handling": [
+      "Ensure cables are unplugged and fully de-energised before handling",
+      "Do not burn cables to remove their outer covering — PVC releases toxic fumes",
+      "Older cables may contain lead-stabilised PVC — leave processing to certified facilities",
+      "Use authorised e-waste or scrap-metal collection points for disposal"
+    ],
+    "reasoning_basis": "Cables are high-volume, low-complexity e-waste with excellent copper recovery rates (>95%) through industrial mechanical stripping, making them one of the most cost-effective items to recycle."
+  },
+
+  "electronic_chips": {
+    "category": "E-Waste — Semiconductor Components",
+    "materials": [
+      "silicon die",
+      "gold bond wires",
+      "copper lead frame",
+      "tin-lead or lead-free solder balls",
+      "epoxy moulding compound",
+      "palladium (BGA contacts)",
+      "ceramic substrate (high-end chips)"
+    ],
+    "components": [
+      "integrated circuit die",
+      "bond wires",
+      "lead frame / ball grid array",
+      "package encapsulant",
+      "heat spreader (if present)"
+    ],
+    "reuse_potential": "low",
+    "repairability": "none",
+    "recovery_pathway": [
+      "Collect loose chips and circuit boards in anti-static packaging",
+      "Deliver to a certified e-waste recycler that handles electronic components",
+      "Certified smelters will extract gold, palladium, and copper through controlled processes",
+      "Ceramic-packaged chips routed to specialised ceramic-metal separation"
+    ],
+    "recycling_stream": "Electronic Component Recycling",
+    "risk_level": "medium",
+    "safe_handling": [
+      "Do not burn or incinerate chips — releases toxic brominated flame retardants and heavy metals",
+      "Do not attempt to extract metals yourself — requires industrial smelting",
+      "Older chips may contain hazardous beryllium oxide substrates — leave handling to professionals",
+      "Store in anti-static bags during collection and transport",
+      "Use only certified e-waste recycling facilities for disposal"
+    ],
+    "reasoning_basis": "Individual chips are small but contain high-purity gold bond wires and palladium contacts; batch processing through certified smelters achieves economically viable precious-metal recovery."
+  },
+
+  "small_appliances": {
+    "category": "E-Waste — Small Household Appliances",
+    "materials": [
+      "steel / stainless steel housing",
+      "ABS / polypropylene plastic",
+      "copper motor windings",
+      "aluminium heat sinks",
+      "rubber seals and gaskets",
+      "glass (if display present)",
+      "PVC power cord",
+      "tin solder on PCB"
+    ],
+    "components": [
+      "electric motor",
+      "power supply / transformer",
+      "control PCB",
+      "heating element (if applicable)",
+      "power cord with plug",
+      "outer casing / housing",
+      "switches and buttons",
+      "internal wiring harness"
+    ],
+    "reuse_potential": "moderate",
+    "repairability": "moderate",
+    "recovery_pathway": [
+      "Unplug the appliance and ensure it is fully powered off",
+      "Deliver the complete appliance to an authorised e-waste collection centre",
+      "Facility will safely remove batteries and capacitors",
+      "Metal housing, motors, and wiring recovered through industrial shredding and separation",
+      "PCBs routed to electronic component recycling for precious-metal recovery"
+    ],
+    "recycling_stream": "Small Appliance Recycling",
+    "risk_level": "low",
+    "safe_handling": [
+      "Do not attempt to disassemble appliances yourself — capacitors may retain dangerous charge",
+      "Do not remove batteries yourself — take the complete unit to a certified facility",
+      "Do not burn or incinerate any appliance components",
+      "Very old appliances may contain hazardous materials (e.g. asbestos) — leave inspection to professionals",
+      "Use only authorised e-waste recycling or collection facilities for disposal"
+    ],
+    "reasoning_basis": "Small appliances are bulky but material-diverse; the primary recovery value comes from copper motor windings and steel housing, with PCBs providing supplementary precious-metal yield when processed by certified recyclers."
+  }
+}
