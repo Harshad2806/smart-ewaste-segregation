@@ -1,108 +1,74 @@
-\# Smart E-Waste Segregation and Recycling System
+# Smart E-Waste Segregation & Recycling System
 
+An end-to-end AI application developed for **Smart India Hackathon** to identify common categories of e-waste from images and provide structured reuse, repair, recovery, and recycling guidance.
 
+## Overview
 
-AI-based e-waste classification and recycling recommendation system developed for Smart India Hackathon.
+The system combines **computer vision, a FastAPI backend, a React frontend, a structured e-waste knowledge base, and local LLM reasoning** into a single workflow.
 
+Users can upload an image or use the camera to:
 
+1. Identify the e-waste category
+2. View prediction confidence
+3. Understand reuse and repair potential
+4. Get recycling and recovery recommendations
+5. View handling and risk information
+6. Review previous analyses through the dashboard
 
-\## Overview
+## Supported E-Waste Categories
 
+- Smartphones
+- Laptops
+- Electrical Cables
+- Electronic Chips
+- Small Appliances
 
-
-This project uses computer vision to classify e-waste images and provide recycling and recovery recommendations through a web application.
-
-
-
-\## Features
-
-
-
-\- E-waste image classification
-
-\- 5 e-waste categories
-
-\- Image upload and live camera capture
-
-\- Confidence-based predictions
-
-\- Recycling recommendations
-
-\- FastAPI backend
-
-\- React frontend
-
-\- Local LLM integration using Ollama
-
-\- Deterministic fallback for recommendations
-
-
-
-\## E-Waste Categories
-
-
-
-\- Electrical Cables
-
-\- Electronic Chips
-
-\- Laptops
-
-\- Small Appliances
-
-\- Smartphones
-
-
-
-\## Tech Stack
-
-
-
-\*\*Backend:\*\* Python, FastAPI, YOLO/Ultralytics, OpenCV
-
-
-
-\*\*Frontend:\*\* React, Vite, Tailwind CSS
-
-
-
-\*\*AI:\*\* YOLO-based image classification, Ollama
-
-
-
-\## Architecture
-
-
+## System Architecture
 
 ```text
-
-Image / Camera
-
-&#x20;     ↓
-
-React Frontend
-
-&#x20;     ↓
-
-FastAPI Backend
-
-&#x20;     ↓
-
-YOLO Classifier
-
-&#x20;     ↓
-
-Knowledge Base
-
-&#x20;     ↓
-
-Recommendation Engine
-
-&#x20;     ↓
-
-Ollama / Deterministic Fallback
-
-&#x20;     ↓
-
-Recycling Recommendation
-
+                ┌─────────────────────┐
+                │   Image / Camera    │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   React Frontend    │
+                │    Vite + Tailwind  │
+                └──────────┬──────────┘
+                           │ HTTP
+                           ▼
+                ┌─────────────────────┐
+                │   FastAPI Backend   │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   YOLO Classifier   │
+                │   5 E-Waste Classes │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Confidence /        │
+                │ Decision Layer      │
+                └──────────┬──────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │  E-Waste Knowledge  │
+                │       Base          │
+                └──────────┬──────────┘
+                           │
+                           ▼
+          ┌─────────────────────────────────┐
+          │       AI Reasoning Layer        │
+          │                                 │
+          │  Ollama → Deterministic        │
+          │           Fallback              │
+          └────────────────┬────────────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Recycling / Recovery│
+                │ Recommendation      │
+                └─────────────────────┘
